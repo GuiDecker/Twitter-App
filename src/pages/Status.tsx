@@ -1,6 +1,7 @@
 import { Divider } from "../components/Divider"
 import { Header } from "../components/Header"
 import { Tweet } from "../components/Tweet"
+import "./Status.css"
 
 const answers = [
   "Concordo...",
@@ -18,7 +19,7 @@ export function Status(){
     <form className="answer-tweet-form">
       <label htmlFor="tweet">
         <img src="https://github.com/GuiDecker.png" alt="Guilherme Dev" />
-        <textarea id='tweet' placeholder="Tweet"/>
+        <textarea id='tweet' placeholder="Tweet your answer"/>
       </label>
       <button type='submit'>Answer</button>
     </form>

@@ -7,7 +7,7 @@ interface TweetProps{
 
 export function Tweet(props: TweetProps){
   return(
-    <a href="%" className="tweet">
+    <a href="/tweet" className="tweet">
       <img src="https://github.com/GuiDecker.png" alt="Guilherme Dev" />
 
       <div className="tweet-content">
