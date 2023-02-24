@@ -4,16 +4,17 @@ import { Header } from '../components/Header'
 import { Divider } from '../components/Divider'
 import "./Timeline.css"
 
-let newTweet = ""
 export function Timeline(){
+  const [newTweet, setNewTweet] = useState('')
   const [tweets, setTweets] = useState(
  ["first data",
   "teste",
-  "New tweet"])
+  "Deu certo"])
 
 function createNewTweet(event: FormEvent){
 event.preventDefault()
-setTweets([newTweet,...tweets])
+setTweets([newTweet, ...tweets])
+setNewTweet('')
 }
 
 return(
@@ -27,8 +28,9 @@ return(
       <textarea 
       id='tweet'
        placeholder="What's happening" 
+       value={newTweet}
       onChange={(event)=>{
-        newTweet = event.target.value
+        setNewTweet(event.target.value) 
       }}/>
     </label>
     <button type='submit'>Tweet</button>
