@@ -1,3 +1,4 @@
+import { PaperPlaneRight } from "phosphor-react"
 import { FormEvent, KeyboardEvent, useEffect, useState } from "react"
 import { Divider } from "../components/Divider"
 import { Header } from "../components/Header"
@@ -47,7 +48,10 @@ const [answers, setAnswers] = useState([
           // console.log(event.target.value)
         }}/>
       </label>
-      <button type='submit'>Answer</button>
+      <button type='submit'> 
+      <PaperPlaneRight/>
+      <span> Answer</span>
+      </button>
     </form>
   
   {answers.map(answer=>{

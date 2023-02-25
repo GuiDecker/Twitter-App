@@ -25,6 +25,12 @@ gap: 2rem;
   cursor: pointer;
 }
 
+.sidebar .newTweet svg{
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+}
+
 .sidebar .newTweet:hover{
   filter: brightness(0.90);
 }
@@ -50,4 +56,22 @@ gap: 2rem;
 .main-navigation a svg{
   width: 2rem;
   height: 2rem;
+}
+
+@media (max-width: 780px){
+  .sidebar{
+    padding: 1.5rem 0.75rem;
+    align-items: center;
+  }
+  .main-navigation a span {
+    display: none;
+  }
+
+  .sidebar .newTweet span {
+    display: none;
+  }
+
+  .sidebar .newTweet svg {
+    display: block;
+  }
 }
